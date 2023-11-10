@@ -1,5 +1,9 @@
 # AL&T Real Estate
  > A website for a real estate company.
+# wire frame
+
+[wire frame.pdf](https://github.com/Millennium-Hub/al-tRealEstate/files/13322217/wire.frame.pdf)
+
 
 ## Built With
 
