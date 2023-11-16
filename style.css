@@ -13,36 +13,40 @@ body {
     align-items: center;
   }
 
-  #searchBar {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333; 
-    color: #fff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    width: 300px;
-    padding: 10px; 
-    margin-bottom: 0;
+  .searchBar {
+    width: 60%;
+    margin: 1rem;
   }
   
   #searchBar::placeholder {
-    color: #aaa; 
+    color: #1a1a1a; 
   }
 
   .welcome-t {
+    background-image: url('./images/welcome-b.jpg');
+    background-repeat: no-repeat;
     text-align: center;
     background-color: #26262631;
     padding: 100px 20px;
   }
 
   .welcome-t h1 {
+    color: white;
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-weight: 900;
   }
 
   .welcome-t p {
+    font-weight: 700;
+    color: white;
     font-size: 1.2rem;
     margin-bottom: 30px;
+  }
+
+  .text-welcome {
+    backdrop-filter: brightness(0.5);
+    padding: 2em;
   }
 
   .cta-button {

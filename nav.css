@@ -19,7 +19,8 @@
   }
 
   /* primary header */
-  .logo {
+  .logo a {
+    text-decoration: none;
     margin: 1.5em;
     color: white;
     font-weight: 700;
@@ -27,6 +28,7 @@
   }
   
   .primary-header {
+    height: 74px;
     align-items: center;
     justify-content: space-between;
   }

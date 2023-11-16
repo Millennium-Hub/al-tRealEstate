@@ -244,9 +244,7 @@ propertyData = {
     }
   });
   
-  let alllinks = document.querySelectorAll('.links');
-  
-  
+
   const allLinks = document.querySelectorAll('.link');
   
   allLinks.forEach((link) => {
