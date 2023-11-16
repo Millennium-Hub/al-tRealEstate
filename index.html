@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atlas Real Estate</title>
-    <script src="https://kit.fontawesome.com/5190cd248e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5190cd248e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nav.css" />
@@ -12,7 +15,7 @@
   <body>
     <header class="primary-header flex">
       <div class="logo">
-        AL&T
+        <a href="index.html">AL&T</a>
       </div>
 
       <button
@@ -42,19 +45,23 @@
       </nav>
     </header>
     <section class="welcome-t">
-      <h1>Welcome to AL&T Real Estate</h1>
-      <p>Discover your dream home with us. Explore our listings and find the perfect property.</p>
+      <div class="text-welcome">
+        <h1>Welcome to AL&T Real Estate</h1>
+        <p>
+          Discover your dream home with us. Explore our listings and find the
+          perfect property.
+        </p>
+      </div>
+
       <a href="#cards" class="cta-button">Explore Listings</a>
     </section>
     <div class="search">
-      <span>Serach by location, price or property type</span>
-      <input type="text" id="searchBar" placeholder="Search properties..." />
+      <input type="text" class="searchBar" id="searchBar" placeholder="Search by location, price or property type"/>
     </div>
     <section class="result"></section>
     <section id="cards-container" class="cards-container">
-        
-        <section id="cards" class="cards"></section>
-      </section>
+      <section id="cards" class="cards"></section>
+    </section>
     <div id="propertyModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -70,18 +77,24 @@
 
     <footer>
       <h1>Contact Us</h1>
-  
+
       <div class="footer-links">
         <a href="./index.html">Home</a>
         <a href="#cards">Listings</a>
         <a href="./contact.html">Contact</a>
         <a href="#">About Us</a>
       </div>
-  
+
       <div class="footer-social">
-        <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" title="Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="#" target="_blank" title="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="#" target="_blank" title="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
       </div>
     </footer>
   </body>
