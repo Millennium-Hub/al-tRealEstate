@@ -148,6 +148,7 @@ propertyData = {
     'images/h-6.jpg'
   ];
   
+  // selecting a random imgage for cards and popups
   function getRandomImage() {
     const randomIndex = Math.floor(Math.random() * images.length);
     return images[randomIndex];
@@ -180,7 +181,7 @@ propertyData = {
     const modal = document.getElementById("propertyModal");
     modal.style.display = "none";
   }
-  
+// using dom manipulation to populate property listings
   for (const location in propertyData) {
     propertyData[location].forEach((property) => {
       cardContainer.innerHTML += `
@@ -215,7 +216,7 @@ propertyData = {
           property.Price.toLowerCase().includes(searchTerm.toLowerCase())
         ) {
           results.innerHTML += `
-              <div onclick="openModal('${location}', '${property.PropertyType}', '${property.Size}', '${property.Price}')">Type: ${property.PropertyType} Price: ${property.Price}</div>
+              <div onclick="openModal('${location}', '${property.PropertyType}', '${property.Size}', '${property.Price}', '${property.PropertyID}')">Type: ${property.PropertyType} Price: ${property.Price}</div>
           `;
         }
       });
@@ -227,7 +228,7 @@ propertyData = {
     filterProperties(searchTerm);
   });
   
-  // navigation
+  // displaying the navigation for small screens 
   
   const primaryNav = document.querySelector('.primary-navigation');
   const navToggle = document.querySelector('.mobile-nav-toggle');
@@ -244,9 +245,11 @@ propertyData = {
     }
   });
   
+// close the mobile menu when a link is clicked on
 
   const allLinks = document.querySelectorAll('.link');
   
+
   allLinks.forEach((link) => {
     link.addEventListener('click', () => {
       const visibility = primaryNav.getAttribute('data-visible');
